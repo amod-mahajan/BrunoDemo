@@ -1,0 +1,18 @@
+meta {
+  name: Create Token
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://restful-booker.herokuapp.com/auth
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "username" : "admin",
+      "password" : "password123"
+  }
+}
